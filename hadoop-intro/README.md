@@ -56,6 +56,7 @@ scp -P 2202 root@sandbox-hdf.hortonworks.com:<sandbox_directory_file> <local_dir
 
 
 ### for my local configuration(helper)
+#### for hdp
 ```
 cd /Users/serhii_vlasiuk/projects/learning/cloudera/HDP_2.6.5_deploy-scripts_180624d542a25
 sh docker-deploy-hdp265.sh
@@ -67,6 +68,16 @@ docker start sandbox-proxy
 docker rm sandbox-hdp
 docker rm sandbox-proxy
 docker rmi hortonworks/sandbox-hdp:{release}
+
+sh enable-native-cda.sh
+```
+#### for hdf
+```
+cd ../HDF_3.1.1_deploy-scripts_180624d542a25
+sh docker-deploy-hdf311.sh
+
+???? i didn't try that
+sh enable-native-cda.sh
 ```
 
 ## Task 2
