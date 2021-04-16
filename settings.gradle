@@ -1,3 +1,6 @@
 rootProject.name = 'big-data-201-gradle'
 include 'hadoop-intro'
+include 'HDFS'
+include 'Introduction-to-DevOps'
+include 'Introduction-to-Big-Data'
 

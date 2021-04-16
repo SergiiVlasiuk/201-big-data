@@ -21,6 +21,8 @@
 ```
     ssh root@sandbox-hdf.hortonworks.com -p 2202
 ```
+password: `hadoop`
+
  - [shell web client](sandbox-hdf.hortonworks.com:4200)
 
 **Send Data Between Sandbox and Local Machine**
