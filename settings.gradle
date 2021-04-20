@@ -1,5 +1,8 @@
 rootProject.name = 'big-data-201-gradle'
 include 'hadoop-intro'
+include 'mentors-plan'
+include 'mentors-plan:home-work-1'
+findProject(':mentors-plan:home-work-1')?.name = 'home-work-1'
 include 'HDFS'
 include 'Introduction-to-DevOps'
 include 'Introduction-to-Big-Data'
