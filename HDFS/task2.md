@@ -8,3 +8,6 @@
  - Make screenshot with successful access to HDFS and all intermediate steps.
 
 
+### Not clear
+ - because of HDP sandbox issues i spent a lot of time for reloading or starting
+ - i'd prefer to have docker swarm construction to cover this purpose
