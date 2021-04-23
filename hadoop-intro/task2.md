@@ -31,3 +31,8 @@ docker exec -it KAFKA_CONTAINER3_ID bash
 kafka-console-consumer --bootstrap-server kafka1:9092,kafka2:9093,kafka3:9094 --topic test2 --from-beginning
 ```
 ![kafka producer consumers](img/kafka_producer-consumers.png)
+
+### Other
+ - [Kafka tutorial with examples](https://www.javatpoint.com/kafka-real-time-example)
+ - [Kafka docker containers](https://github.com/conduktor/kafka-stack-docker-compose)
+ - [Kafka security](https://docs.confluent.io/platform/current/schema-registry/schema-validation.html#mtls-mutual-tls-authentication)

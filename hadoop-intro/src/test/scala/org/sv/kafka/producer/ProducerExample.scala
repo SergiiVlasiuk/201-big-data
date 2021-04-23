@@ -17,10 +17,11 @@ object ProducerExample extends App {
   val producer = new KafkaProducer[String, String](props)
 
   val TOPIC = "test"
+  val from = 91
 
-  for (i <- 71 to 80) {
-//    val record = new ProducerRecord(TOPIC, i % 6, "key", s"hello $i")
-    val record = new ProducerRecord(TOPIC, "key", s"hello $i")
+  for (i <- from to from + 9) {
+    val record = new ProducerRecord(TOPIC, s"key_${i % 6}", s"hello $i")
+//    val record = new ProducerRecord(TOPIC, "key", s"hello $i")
     producer.send(record)
     println(s"producer sends: $record")
   }
